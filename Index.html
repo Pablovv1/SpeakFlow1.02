@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpeakFlow - Aprende inglés con música y películas</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/cookies.css">
+    <link rel="stylesheet" href="css/loader.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Loader -->
+    <div class="loader-container">
+        <div class="loader">
+            <div class="loader-circle"></div>
+            <div class="loader-circle"></div>
+            <div class="loader-circle"></div>
+            <div class="loader-logo">
+                <i class="fas fa-language"></i>
+            </div>
+            <div class="loader-text">Cargando SpeakFlow</div>
+        </div>
+        <div class="loader-particles"></div>
+    </div>
+
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h1>SpeakFlow</h1>
+            </div>
+            <div class="nav-content">
+                <div class="nav-links">
+                    <a href="#home" class="active"><i class="fas fa-home"></i><span>Inicio</span></a>
+                    <a href="#features"><i class="fas fa-star"></i><span>Características</span></a>
+                    <a href="#forum"><i class="fas fa-comments"></i><span>Foro</span></a>
+                    <a href="#about"><i class="fas fa-info-circle"></i><span>Acerca de</span></a>
+                </div>
+                <div class="user-actions">
+                    <button class="btn-login"><i class="fas fa-sign-in-alt"></i> Iniciar Sesión</button>
+                    <button class="btn-register"><i class="fas fa-user-plus"></i> Registrarse</button>
+                </div>
+            </div>
+            <button class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-background">
+                <div class="gradient-sphere"></div>
+                <div class="gradient-sphere"></div>
+                <div class="gradient-sphere"></div>
+                <div class="noise-overlay"></div>
+            </div>
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="hero-badge">
+                        <i class="fas fa-graduation-cap"></i> Aprende inglés de forma divertida
+                    </div>
+                    <h2>Aprende inglés con <span class="gradient-text">música y películas</span></h2>
+                    <p>Únete a nuestra comunidad y mejora tu inglés mientras disfrutas de tu contenido favorito. Comparte, aprende y crece con otros estudiantes.</p>
+                    <div class="hero-features">
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Aprende con contenido que te gusta</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Comunidad activa y colaborativa</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Recursos exclusivos y personalizados</span>
+                        </div>
+                    </div>
+                    <div class="hero-buttons">
+                        <button class="btn-primary">
+                            <i class="fas fa-rocket"></i>
+                            Comenzar ahora
+                        </button>
+                        <button class="btn-secondary">
+                            <i class="fas fa-play"></i>
+                            Ver video
+                        </button>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="floating-card music" data-speed="20">
+                        <div class="card-glow"></div>
+                        <i class="fas fa-music"></i>
+                        <span>Música</span>
+                    </div>
+                    <div class="floating-card movies" data-speed="15">
+                        <div class="card-glow"></div>
+                        <i class="fas fa-film"></i>
+                        <span>Películas</span>
+                    </div>
+                    <div class="floating-card community" data-speed="25">
+                        <div class="card-glow"></div>
+                        <i class="fas fa-users"></i>
+                        <span>Comunidad</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <div class="stat-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="stat-info">
+                        <div class="stat-number" data-value="10000">0</div>
+                        <div class="stat-label">Usuarios activos</div>
+                    </div>
+                </div>
+                <div class="stat">
+                    <div class="stat-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <div class="stat-info">
+                        <div class="stat-number" data-value="50000">0</div>
+                        <div class="stat-label">Discusiones</div>
+                    </div>
+                </div>
+                <div class="stat">
+                    <div class="stat-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <div class="stat-info">
+                        <div class="stat-number" data-value="1000">0</div>
+                        <div class="stat-label">Recursos</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features" id="features">
+            <div class="section-header">
+                <h2>Características principales</h2>
+                <p>Descubre todo lo que SpeakFlow tiene para ofrecerte</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-music"></i>
+                    </div>
+                    <h3>Aprende con música</h3>
+                    <p>Analiza letras de canciones, aprende vocabulario y mejora tu pronunciación con tu música favorita.</p>
+                    <a href="#" class="feature-link">
+                        Saber más <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-film"></i>
+                    </div>
+                    <h3>Películas y series</h3>
+                    <p>Disfruta de tus películas y series favoritas mientras mejoras tu comprensión auditiva y vocabulario.</p>
+                    <a href="#" class="feature-link">
+                        Saber más <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Comunidad activa</h3>
+                    <p>Únete a una comunidad de estudiantes apasionados, comparte recursos y aprende juntos.</p>
+                    <a href="#" class="feature-link">
+                        Saber más <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="forum-preview" id="forum">
+            <div class="section-header">
+                <h2>Últimas discusiones</h2>
+                <p>Mira lo que está pasando en la comunidad</p>
+            </div>
+            <div class="forum-posts">
+                <div class="post">
+                    <div class="post-header">
+                        <img src="https://i.pravatar.cc/150?img=1" alt="Usuario">
+                        <div class="post-info">
+                            <h4>María García</h4>
+                            <div class="post-meta">Hace 2 horas</div>
+                        </div>
+                    </div>
+                    <p>¡Acabo de descubrir esta canción increíble! ¿Alguien quiere practicar la pronunciación juntos?</p>
+                    <div class="post-actions">
+                        <button class="post-action">
+                            <i class="fas fa-heart"></i>
+                            <span>Me gusta</span>
+                        </button>
+                        <button class="post-action">
+                            <i class="fas fa-comment"></i>
+                            <span>Comentar</span>
+                        </button>
+                        <button class="post-action">
+                            <i class="fas fa-share"></i>
+                            <span>Compartir</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="post-header">
+                        <img src="https://i.pravatar.cc/150?img=2" alt="Usuario">
+                        <div class="post-info">
+                            <h4>Juan Pérez</h4>
+                            <div class="post-meta">Hace 5 horas</div>
+                        </div>
+                    </div>
+                    <p>¿Alguien ha visto la última temporada de Stranger Things? ¡Podríamos hacer un grupo de discusión!</p>
+                    <div class="post-actions">
+                        <button class="post-action">
+                            <i class="fas fa-heart"></i>
+                            <span>Me gusta</span>
+                        </button>
+                        <button class="post-action">
+                            <i class="fas fa-comment"></i>
+                            <span>Comentar</span>
+                        </button>
+                        <button class="post-action">
+                            <i class="fas fa-share"></i>
+                            <span>Compartir</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>SpeakFlow</h3>
+                <p>Aprende inglés de forma divertida y efectiva con música y películas.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Enlaces rápidos</h3>
+                <ul>
+                    <li><a href="#home">Inicio</a></li>
+                    <li><a href="#features">Características</a></li>
+                    <li><a href="#forum">Foro</a></li>
+                    <li><a href="#about">Acerca de</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Recursos</h3>
+                <ul>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Tutoriales</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Soporte</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="#">Términos y condiciones</a></li>
+                    <li><a href="#">Política de privacidad</a></li>
+                    <li><a href="#">Cookies</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 SpeakFlow. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Cookie Banner -->
+    <div class="cookie-banner">
+        <div class="cookie-content">
+            <div class="cookie-icon">
+                <i class="fas fa-cookie-bite"></i>
+            </div>
+            <div class="cookie-text">
+                <h3>Utilizamos cookies</h3>
+                <p>Utilizamos cookies para mejorar tu experiencia de navegación, mostrar anuncios personalizados y analizar nuestro tráfico. Al hacer clic en "Aceptar todo", aceptas nuestro uso de cookies.</p>
+                <div class="cookie-actions">
+                    <button class="cookie-btn accept">Aceptar todo</button>
+                    <button class="cookie-btn settings">Personalizar</button>
+                </div>
+            </div>
+        </div>
+        <div class="cookie-settings">
+            <div class="cookie-option">
+                <label>Cookies necesarias</label>
+                <label class="cookie-toggle">
+                    <input type="checkbox" name="necessary" checked disabled>
+                    <span class="cookie-slider"></span>
+                </label>
+            </div>
+            <div class="cookie-option">
+                <label>Cookies analíticas</label>
+                <label class="cookie-toggle">
+                    <input type="checkbox" name="analytics">
+                    <span class="cookie-slider"></span>
+                </label>
+            </div>
+            <div class="cookie-option">
+                <label>Cookies de marketing</label>
+                <label class="cookie-toggle">
+                    <input type="checkbox" name="marketing">
+                    <span class="cookie-slider"></span>
+                </label>
+            </div>
+            <div class="cookie-option">
+                <label>Cookies de preferencias</label>
+                <label class="cookie-toggle">
+                    <input type="checkbox" name="preferences">
+                    <span class="cookie-slider"></span>
+                </label>
+            </div>
+            <button class="cookie-btn save-settings">Guardar preferencias</button>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/cookies.js"></script>
+    <script src="js/loader.js"></script>
+</body>
+</html>
